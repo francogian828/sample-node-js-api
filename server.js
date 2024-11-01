@@ -19,7 +19,7 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://francogiandecastro:Franco123@nodetest.8czs1.mongodb.net/sample_database')
+mongoose.connect('<replace-with-your-database-connection-string-from-mongodb-website>')
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
 
